@@ -1,4 +1,4 @@
-﻿(function ($, w, undefined) {
+(function ($, w, undefined) {
   if (w.footable === undefined || w.foobox === null)
     throw new Error('Please check and make sure footable.js is included in the page and is loaded prior to this script.');
 
@@ -37,7 +37,6 @@
                     ft.columns[i].hide[cur_breakpoint] = true;
                   }
                   $(ft.table).find('.'+e.ft.options.classes.detail).remove();
-                  $(ft.table).trigger(e.ft.options.triggers.resize);
                   $(ft.table).trigger(e.ft.options.triggers.redraw);
                   if(!ft.hasBreakpointColumn(cur_breakpoint))
                   {
